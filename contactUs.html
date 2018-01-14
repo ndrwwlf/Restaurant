@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Andy Wolf - Restaurant - Contact Us</title>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div id="title">
@@ -18,11 +19,11 @@
         </div>
         <form action="submit.html" method="POST">
             <label for="name">Name:</label>      
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" class="required"><br>
             <label for="email">Email:</label>   
-            <input type="text" id="email" name="email"><br>
+            <input type="text" id="email" name="email" class="required"><br>
             <label for"phone">Phone:</label>   
-            <input type="text" id="phone" name="phone"><br>
+            <input type="text" id="phone" name="phone" class="required"><br>
             <label for="reason">Reason for Inquiry:</label>    
             <select id="reason" name="reason">
                 <option value="catering" selected>Catering (selected)</option>
@@ -56,6 +57,7 @@
                 <input type="checkbox" id="sun" name="day" value="sun">
                 <label for="sun">Sunday</label> 
             </fieldset>
+            <input type="submit" name="submit" value="Submit">
         </form><br>
         <hr/>
         <div id="footer">

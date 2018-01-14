@@ -2,6 +2,39 @@
 <html>
     <head>
         <title>Andy Wolf - Restaurant - Menu</title>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            .pizza table, th {
+            border: 4px solid #F73A14;
+            border-collapse: collapse;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 15px;
+            padding-left: 5px;
+            
+            }
+            .pizza td {border: 4px solid #F73A14;
+            border-collapse: collapse;
+            padding-top: 15px;
+            padding-right: 5px;
+            padding-bottom: 15px;
+            padding-left: 5px;
+
+                        }
+            .pizza th {
+                            background-color: rgb(134, 223, 2);
+                        }
+            .beverages table, .beverages td {
+                border: 2px solid blue;
+                border-collapse: initial;
+                padding-top: 5px;
+                padding-right: 2px;
+                padding-bottom: 5px;
+                padding-left: 2px;
+                background-color: aqua;
+            }
+                
+        </style>
     </head>
     <body>
         <div id="title">
@@ -10,15 +43,15 @@
         <div id="navigation">
             <hr/>
             <p>
-                <a href="restaurantIndex.html">Home</a>    
-                <a href="menu.html">Menu</a>    
-                <a href="contactUs.html">Contact Us</a>
+                <a href="restaurantIndex.html">Home</a>               
+                <a href="menu.html">Menu</a>                    
+                <a href="contactUs.html">Contact Us</a>             
             </p>
             <hr/>
         </div>
-        <div id="menu">
-            <table>
-                <caption><h2>Menu</h2></caption>
+        <div id="menuTable">
+            <table class="pizza" style="margin: auto;" width="75%">
+                <caption><h2>Pizza Menu</h2></caption>
                 <tr>
                     <th>Cheese</th>
                     <th>Pepperoni</th>
@@ -38,6 +71,38 @@
                     <td>Ham and pineapple, $11.50</td>
                     <td>For when you're tired of pepperoni, $10.99</td>
                     <td>BBQ sauce, chicken, and red onion, $11.50</td>
+                </tr>
+            </table>
+        </div><br><br>
+        <div id="beverageTable">
+            <table class="beverages" style="margin: auto;" width="800">
+                <caption>Beverages</caption>
+                <tr>    
+                        <td>
+                            <div style='float: left; text-align: left'>Root Beer</div>
+                            <div style='float: right; text-align: right'>$3.00</div>
+                        </td>
+                </tr>
+                <tr>   
+                        <td>
+                            <div style='float: left; text-align: left'>Bottled Water</div>
+                            <div style='float: right; text-align: right'>$1.25</div>
+                        </td>
+                </tr> 
+                <tr>   
+                        <td>
+                            <div style='float: left; text-align: left'>Lemonade</div>
+                            <div style='float: right; text-align: right'>$1.00</div>
+                        </td>
+                </tr>
+                <tr>
+                        <td>
+                            <div style='float: left; text-align: left'>Iced Tea</div>
+                            <div style='float: right; text-align: right'>$1.25</div>
+                        </td>
+                </tr>
+                <tr>
+                    <td>*See your server for daily wine and beer collection*</td>
                 </tr>
             </table>
         </div>
