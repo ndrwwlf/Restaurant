@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Andy Wolf - Restaurant - Contact Us</title>
+    </head>
+    <body>
+        <div id="title">
+            <h1>Andy's Pizza</h1>
+        </div> 
+        <div id="navigation">
+            <hr/>
+            <p>
+                <a href="restaurantIndex.html">Home</a>    
+                <a href="menu.html">Menu</a>    
+                <a href="contactUs.html">Contact Us</a>
+            </p>
+            <hr/>
+        </div>
+        <form action="submit.html" method="POST">
+            <label for="name">Name:</label>      
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>   
+            <input type="text" id="email" name="email"><br>
+            <label for"phone">Phone:</label>   
+            <input type="text" id="phone" name="phone"><br>
+            <label for="reason">Reason for Inquiry:</label>    
+            <select id="reason" name="reason">
+                <option value="catering" selected>Catering (selected)</option>
+                <option value="privateParty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br>
+            <label for="message">Message/Additional Info</label>  
+            <textarea id="message"></textarea>
+            <fieldset>
+                <legend>Have you been to our restaurant before?</legend>
+                <input type="radio" id="choice1" name="beenhere" value="yes">
+                <label for="choice1">Yes</label>    
+                <input type="radio" id="choice2" name="beenhere" value="no">
+                <label for="choice2">No</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Best Days of the Week to Contact You</legend>
+                <input type="checkbox" id="mon" name="day" value="mon">
+                <label for="mon">Monday</label>       
+                <input type="checkbox" id="tues" name="day" value="tues">
+                <label for="tues">Tuesday</label>    
+                <input type="checkbox" id="wed" name="day" value="wed">
+                <label for="wed">Wednesday</label>    
+                <input type="checkbox" id="thu" name="day" value="thu">
+                <label for="thu">Thursday</label>    
+                <input type="checkbox" id="fri" name="day" value="fri">
+                <label for="fri">Friday</label>    
+                <input type="checkbox" id="sat" name="day" value="sat">
+                <label for="sat">Saturday</label>    
+                <input type="checkbox" id="sun" name="day" value="sun">
+                <label for="sun">Sunday</label> 
+            </fieldset>
+        </form><br>
+        <hr/>
+        <div id="footer">
+            <footer>
+                <p>
+                    123 Sesame St. Minneapolis, MN 55407<br>
+                    (612)555-8855
+                </p>
+            </footer>
+        </div>
+        </body>
+</html>
